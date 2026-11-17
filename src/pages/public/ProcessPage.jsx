@@ -1,0 +1,1 @@
+export {ProcessPage as default} from "@/pages/public/PublicPages";

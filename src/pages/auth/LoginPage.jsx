@@ -1,0 +1,9 @@
+import {useState} from "react";
+import {useLocation,useNavigate,Link} from "react-router-dom";
+import {useAuthContext} from "@/context/AuthContext";
+export default function LoginPage(){
+ const {login}=useAuthContext();const nav=useNavigate();const loc=useLocation();
+ const [email,setEmail]=useState("applicant@demo.in");const [password,setPassword]=useState("Demo@123");const [error,setError]=useState("");
+ const submit=async e=>{e.preventDefault();const r=await login(email,password);if(!r.success){setError(r.message);return}const target=loc.state?.from?.pathname;const homes={applicant:"/applicant/dashboard",examiner:"/examiner/dashboard",supervisor:"/supervisor/dashboard",admin:"/admin/dashboard"};nav(target||homes[r.user.role]||"/",{replace:true})};
+ return <div className="container py-5" style={{maxWidth:520}}><div className="card border-0 shadow-sm"><div className="card-body p-4 p-md-5"><Link to="/" className="text-decoration-none">← BuildPermit Portal</Link><h1 className="h3 mt-4">Sign in</h1><p className="text-secondary">Access your role-specific workspace.</p>{error&&<div className="alert alert-danger">{error}</div>}<form onSubmit={submit}><label className="form-label">Email address</label><input className="form-control mb-3" type="email" value={email} onChange={e=>setEmail(e.target.value)} required/><label className="form-label">Password</label><input className="form-control mb-3" type="password" value={password} onChange={e=>setPassword(e.target.value)} required/><button className="btn btn-primary w-100">Sign in</button></form><div className="alert alert-light border mt-4 mb-0 small"><strong>Demo password:</strong> Demo@123<br/>Applicant: applicant@demo.in<br/>Examiner: examiner@demo.in<br/>Supervisor: supervisor@demo.in<br/>Admin: admin@demo.in</div></div></div></div>
+}

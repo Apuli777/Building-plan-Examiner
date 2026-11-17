@@ -1,0 +1,1 @@
+export {TrackPage as default} from "@/pages/public/PublicPages";

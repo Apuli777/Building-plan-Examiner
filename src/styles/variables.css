@@ -1,0 +1,15 @@
+/* Central design tokens: navy, white and restrained gold. */
+:root {
+ --navy-950:#071427;--navy-900:#0b1f3a;--navy-800:#102a4c;--navy-700:#14305a;--navy-600:#1a3f73;--navy-500:#1f4e8c;--navy-400:#3a6baa;--navy-300:#7fa0cc;--navy-200:#bcd0e8;--navy-100:#e4ecf6;--navy-50:#f1f5fa;
+ --gold-700:#8a6d0b;--gold-600:#a8860f;--gold-500:#c9a227;--gold-400:#d9b94f;--gold-200:#eedda0;--gold-100:#f8f0d2;--gold-50:#fcf8e8;
+ --white:#fff;--gray-50:#f5f7fa;--gray-100:#edf0f5;--gray-200:#e3e8ef;--gray-300:#cbd3df;--gray-400:#9aa5b5;--gray-500:#5b6778;--gray-700:#333f52;--gray-900:#1a2233;
+ --success-600:#15803d;--success-100:#dcfce7;--warning-600:#b45309;--warning-100:#fef3c7;--danger-600:#b91c1c;--danger-100:#fee2e2;--info-600:#0369a1;--info-100:#e0f2fe;
+ --st-draft-bg:#edf0f5;--st-draft-fg:#475467;--st-draft-bd:#cbd3df;--st-submitted-bg:#dbeafe;--st-submitted-fg:#1e40af;--st-submitted-bd:#bfdbfe;--st-under-review-bg:#e0e7ff;--st-under-review-fg:#3730a3;--st-under-review-bd:#c7d2fe;--st-objection-raised-bg:#fef3c7;--st-objection-raised-fg:#92400e;--st-objection-raised-bd:#fde68a;--st-resubmitted-bg:#ccfbf1;--st-resubmitted-fg:#115e59;--st-resubmitted-bd:#99f6e4;--st-supervisor-review-bg:#ede9fe;--st-supervisor-review-fg:#5b21b6;--st-supervisor-review-bd:#ddd6fe;--st-approved-bg:#dcfce7;--st-approved-fg:#166534;--st-approved-bd:#bbf7d0;--st-rejected-bg:#fee2e2;--st-rejected-fg:#991b1b;--st-rejected-bd:#fecaca;--st-closed-bg:#e2e8f0;--st-closed-fg:#334155;--st-closed-bd:#cbd5e1;
+ --font-heading:'Poppins','Inter',system-ui,sans-serif;--font-body:'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;
+ --fs-xs:.75rem;--fs-sm:.875rem;--fs-base:1rem;--fs-md:1.125rem;--fs-lg:1.25rem;--fs-xl:1.5rem;--fs-2xl:1.875rem;--fs-3xl:2.375rem;--fs-4xl:3rem;
+ --sp-1:.25rem;--sp-2:.5rem;--sp-3:.75rem;--sp-4:1rem;--sp-5:1.5rem;--sp-6:2rem;--sp-7:3rem;--sp-8:4rem;--sp-9:6rem;
+ --radius-sm:6px;--radius-md:10px;--radius-lg:14px;--radius-xl:20px;--radius-pill:999px;
+ --shadow-xs:0 1px 2px rgba(11,31,58,.06);--shadow-sm:0 1px 3px rgba(11,31,58,.08),0 1px 2px rgba(11,31,58,.04);--shadow-md:0 4px 12px rgba(11,31,58,.08);--shadow-lg:0 12px 32px rgba(11,31,58,.14);--focus-ring:0 0 0 3px rgba(201,162,39,.45);
+ --dur:180ms;--ease:cubic-bezier(.2,0,0,1);--header-h:68px;--sidebar-w:260px;--topbar-h:64px;--container-max:1200px;--content-max:1100px;--z-progress:1100;--z-header:1030;--z-sidebar:1040;--z-overlay:1050;--z-modal:1060;--z-toast:1080;
+ --bs-primary:#1f4e8c;--bs-primary-rgb:31,78,140;--bs-body-font-family:var(--font-body);--bs-body-color:var(--gray-500);--bs-body-bg:var(--gray-50);--bs-border-color:var(--gray-200);--bs-link-color:var(--navy-500);--bs-link-hover-color:var(--navy-700);
+}

@@ -1,0 +1,2 @@
+export const PROTOTYPE_NOTICE = "Academic frontend prototype only. It does not issue legally valid building permits or connect to government systems.";
+export const PROCESS_STEPS = ["Create an account and sign in","Enter property and building details","Upload supporting documents","Review and submit","Examiner checks the application","Applicant responds to objections if needed","Supervisor review where required","Sample decision is recorded"];

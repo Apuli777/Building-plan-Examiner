@@ -1,0 +1,1 @@
+export {AboutPage as default} from "@/pages/public/PublicPages";
